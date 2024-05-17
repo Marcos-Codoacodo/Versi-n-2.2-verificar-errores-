@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de contacto</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body id="body">
+  <header>
+   
+  
+    <nav id="nav">
+        <div id="logodiv">
+            <a href="../../index.html" class="logo">
+                <img src="../img_nav/vidasanalogo.png" class="logo" alt="logo">
+            </a>
+        </div>
+  
+        <ul>
+  
+            
+            <li class="secciones"><a href="inicio.html">Inicio</a></li>
+            <li class="secciones"><a href="../../index.html">Recetas</a>
+            </li>
+            <li class="secciones"><a href="#">Quienes somos</a></li>
+            <li class="secciones"><a href="formulario.html">Contacto</a></li>
+  
+        </ul>
+    </nav>
+  
+  </header>
+
+  <div class="containerForm">
+    <form action="action_page.php">
+  
+      <label for="nombre">Nombre y Apellido</label>
+      <input type="text" id="nombre" name="nombres" placeholder="">
+  
+      <label for="mail">Mail (te responderemos a esta casilla)</label>
+      <input type="text" id="mail" name="correo" placeholder="">
+  
+      <label for="referencia">¿Cómo nos conociste?</label>
+      <select id="referencia" name="referencia">
+        <option value="rrss">Por redes sociales</option>
+        <option value="amigo">Por medio de un conocido/a</option>
+        <option value="publi">Por publicidad en la vía pública</option>
+        <option value="otro">Otro</option>
+      </select>
+  
+      <label for="subject">Dejanos tu mensaje</label>
+      <textarea id="subject" name="subject" placeholder="¡Queremos leerte!" style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div>
+
+  <footer class="footer">
+    <div class="logotipo_y_redes">
+        <div class="box">
+            <figure>
+        
+            <img src="../img_nav/vidasanalogo.png" alt="Logo_vida_sana">
+            
+            </figure>
+        </div>
+        <div class="box">
+            <!-- <h2>Nuestras Redes:</h2> -->
+
+            <div class="redes_sociales">
+                <a href="https://wa.me/+5492657225231" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+
+        </div>
+
+    </div>
+   <div class="derechos">
+    Copyright © 2024 <b>Vida Sana</b>./ Todos los derechos reservados.
+   </div>
+
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,613 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+/* barra de nav*/
+
+img {
+  border-radius: 10px;
+}
+.logo:hover{
+  transition: all 0.4s;
+  transform: scale(1.05);
+  display:flex;
+}
+
+h1{
+  text-align: center;
+}
+
+nav {
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px 10px 10px 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  display:flex;
+  padding: 0px 90px;
+  width: 100%;
+  cursor: pointer;
+
+}
+
+li {
+  margin-right: 20px;
+  margin-top: 2px;
+}
+
+nav ul li {
+  font-family: "Times New Roman", Times, serif;
+  display: inline-flex;
+  line-height: 15vh;
+  font-size: 25px;
+}
+.secciones {
+  margin-left: 10px;
+}
+
+
+
+a:hover {
+  color: rgb(14, 16, 15);
+  transition: all 0.3s;
+  transform: scale(1.15);
+}
+a {
+  color: #10c056;
+}
+.inferior {
+  width: 100%;
+  height: 20px;
+}
+.margen_inferior {
+  color: black;
+  text-align: center;
+}
+
+
+@media screen and(max-width:320px) {
+  
+ 
+}
+@media screen and(max-width:768px) {
+
+ 
+}
+/*fin de barra de nav*/
+#banner{
+  text-align: center;
+
+  margin-left: 10vw;
+  margin-right: 10vw;
+  width: 80vw;
+  height: 400px;
+
+
+}
+/* formulario*/
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url("assets/img_form/fondo1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Estilo para inputs de texto, select y textarea */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* Estilo para el botón de enviar con un color de fondo específico, etc. */
+input[type="submit"] {
+  background-color: #04aa6d;
+  color:white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Al pasar el ratón sobre el botón de enviar, añade un color verde más oscuro */
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Añade un color de fondo y algo de relleno alrededor del formulario */
+.containerForm {
+  color: black;
+  border-radius: 5px;
+  padding: 20px;
+  width: auto;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*recetas*/
+
+
+h2{
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  /*max-width: 1200px;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.container .card {
+  background-color: white;
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.container .card:hover {
+  transform: translate(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img {
+  width: 330px;
+  height: 220px;
+}
+
+.container .card h4 {
+  font-weight: 600;
+}
+
+.container .card p {
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.container .card a {
+  text-decoration: none;
+  color: #fff;
+  background: #25d366;
+  padding: 5px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.container .card a:hover {
+  background: #25d366;
+}
+
+body {
+  color: #645452;
+  min-height: 100vh;
+  font-family: 'outfit', sans-serif;
+  line-height: 1.4;
+  display: grid;
+
+}
+
+.recetatitulo {
+  font-size: 2.8rem;
+}
+.recipe-img{
+  max-width: 100%;
+  display: block;
+}
+
+ul li {
+  margin-bottom: .5rem;
+}
+ul li span {
+  margin-left: 1rem;
+  font-weight: 700;
+}
+.recipe-step {
+  margin: rem 1rem 0;
+}
+.nutrition-step {
+  margin-top: 1rem;
+}
+ul li::marker {
+  font-weight: bold;
+}
+ul {
+  padding-left: 1.25rem;
+}
+.hr {
+  margin:  1.5rem 0;
+  border:  1px solid;
+}
+.container{
+  max-width: 800px;
+  background-color: white;
+
+}
+.recipe-information{
+  padding: 0rem 2rem 2rem 2rem;
+}
+.description {
+  margin: 1.5rem 0
+}
+.recipe-prep-time {
+  background-color: #FFF6F5;
+  padding: 1.25rem;
+  border-radius: 1rem;
+}
+.instrucciones .item {
+  padding-left: .5rem;
+  margin-bottom: .5rem;
+  display: flex;
+}
+
+.instrucciones .item .num {
+  color: #744B3D;
+  margin-right: 1rem;
+  font-weight: 700;
+}
+
+.instrucciones .item p span {
+  font-weight: 700;
+}
+
+/*quienes somos*/
+.quienessomos{
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+@media (max-widht: 540px) {
+  .recetatitulo{
+    margin-top: 2rem;
+  }
+  .container {
+    margin: 0;
+  }
+  .container.recipe-img{
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .container .recipe-img img {
+    border-radius: 0;
+  }
+}
+
+/* arranca footer */
+
+
+
+footer{
+  width: 100%;
+  background-color: white;
+ 
+  border-style: solid;
+  border-width: 2px;
+  border-color: #0a0a09;
+}
+
+.footer .logotipo_y_redes{
+  width: 100%;
+  padding: 3px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.footer .logotipo_y_redes .box figure img{
+  width: 180px;
+}
+
+
+.redes_sociales a{
+  display:inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  margin-right: 5px;
+  color:yellowgreen;
+  text-align: center;
+  transition:all 300ms ease;
+  font-size: 40px;
+}
+
+
+.redes_sociales a:hover{
+  filter:blur(0.5px);
+}
+
+.footer-form {
+  text-align:justify;
+}
+
+.newsletter h2{
+  color:yellowgreen;
+  font-size: 20px;
+}
+
+.newsletter p{
+  color:yellowgreen;
+  font-size: 18px;
+}
+
+.footer-form form {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.footer-form #input_fotter {
+  padding: 10px 20px;
+  border: 2px solid black;
+ 
+  font-size: 15px;
+  width: 250px;
+  margin-right: 12px; 
+}
+
+.footer-form #button_fotter {
+  padding: 10px 20px;
+  background-color: yellowgreen;
+  color: white;
+  border: none;
+  
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.footer-form #button_fotter:hover {
+  background-color: #4aa728;
+}
+
+
+.derechos{
+  background-color: black;
+  color:white
+}
+
+
+/* Termina footer */
+
+
+/* inicio */
+
+.inicioo{
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 33px 9%;
+  background: transparent;
+}
+.logo{
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+.navlistt{
+  display: flex;
+}
+.navlistt a{
+  color: white;
+  margin-left: 60px;
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all .55s ease;
+}
+.navlistt a:hover{
+  border-bottom: 2px solid white;
+}
+#menu-icon{
+  color: white;
+  font-size: 35px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+.hero{
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background: -webkit-linear-gradient(90deg, #9d3715,#963515,#812f16,#692a17);
+  background: linear-gradient(90deg, #9d3715,#963515,#812f16,#692a17);
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+section{
+  padding: 0 19%;
+}
+.hero-text h5{
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 40px;
+}
+.hero-text h1{
+   font-family: 'permanent Marker', cursive;
+   font-size: 90px;
+   line-height: 1;
+   color: white;
+   margin: 0 0 45px;
+}
+
+.hero-text h4{
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px;
+}
+.hero-text p{
+  color: white;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 40px;
+}
+.hero-imgg img{
+  width: 400px;
+  height: auto;
+}
+.iconsss{
+  position: absolute;
+  top: 50%;
+  padding: 0 9%;
+  transform: translateY(-50%);
+}
+.iconsss i{
+  display: block;
+  margin: 26px 0;
+  font-size: 24px;
+  color: white;
+  transition: all .50s ease;
+}
+.iconsss i:hover{
+  color: #4d9559;
+  transform: translateY(-5%);
+}
+.scroll-down{
+  position: absolute;
+  bottom: 6%;
+  right: 9%;
+}
+.scroll-down i{
+  display: block;
+  padding: 12px;
+  font-size: 25px;
+  color: white;
+  background: #692a17;
+  border-radius: 30px;
+  transition: all .50s ease;
+}
+
+@media(max-width:1535px){
+  header{
+      padding: 15px 3%;
+      transition: .2s;
+  }
+  .iconsss{
+      padding: 0 3%;
+      transition: .2s;
+  }
+  .scroll-down{
+      right: 3%;
+      transition: .2s;
+  }
+}
+
+@media(max-width:1460px){
+  section{
+      padding: 0 12%;
+      transition: .2s;
+  }
+}
+@media(max-width:1340px){
+  .hero-imgg img{
+      width: 100%;
+      height: auto;
+  }
+  .hero-text h1{
+      font-size: 75px;
+      margin: 0 0 30px;
+  }
+  .hero-text h5{
+      margin-bottom: 25px;
+  }
+}
+@media(max-width:1195px){
+  section{
+      padding: 0 3%;
+      transition: .2s;
+  }
+  .hero-text{
+      padding-top: 115px;
+  }
+  .hero-imgg{
+      text-align: center;
+  }
+  .hero-imgg img{
+      width: 560px;
+  }
+  .hero{
+      height: 100%;
+      gap: 1rem;
+      grid-template-columns: 1fr;
+  }
+  .iconsss{
+      display: none;
+  }
+  .scroll-down{
+      display: none;
+  }
+}
+@media(max-width:990px){
+  #menu-icon{
+      display: block;
+  }
+  .navlistt{
+      position: absolute;
+      top: 100%;
+      right:-100%;
+      width: 300px;
+      height: 40vh;
+      background: #692a17;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 50px 20px;
+      transition: all .55s ease;
+  }
+  .navlistt a{
+      margin-left: 0;
+      display: block;
+      margin: 7px 0;
+  }
+  .navlistt.open{
+      right: 0;
+  }
+}
+
+@media(max-width:680px){
+  .hero-imgg img{
+      width: 100%;
+      height: auto;
+  }
+}
+
+/* termina inicio */
